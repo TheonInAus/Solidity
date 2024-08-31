@@ -1,0 +1,171 @@
+{
+	"deploy": {
+		"VM:-": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"main:1": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"ropsten:3": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"rinkeby:4": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"kovan:42": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"goerli:5": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"Custom": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		}
+	},
+	"data": {
+		"bytecode": {
+			"functionDebugData": {},
+			"generatedSources": [],
+			"linkReferences": {},
+			"object": "",
+			"opcodes": "",
+			"sourceMap": ""
+		},
+		"deployedBytecode": {
+			"functionDebugData": {},
+			"generatedSources": [],
+			"immutableReferences": {},
+			"linkReferences": {},
+			"object": "",
+			"opcodes": "",
+			"sourceMap": ""
+		},
+		"gasEstimates": null,
+		"methodIdentifiers": {
+			"getBatchInfo(uint256)": "1a0058f5"
+		}
+	},
+	"abi": [
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "_batchId",
+					"type": "uint256"
+				}
+			],
+			"name": "getBatchInfo",
+			"outputs": [
+				{
+					"components": [
+						{
+							"components": [
+								{
+									"internalType": "uint256",
+									"name": "productionDate",
+									"type": "uint256"
+								},
+								{
+									"internalType": "uint256",
+									"name": "weight",
+									"type": "uint256"
+								},
+								{
+									"internalType": "uint256",
+									"name": "expiryDate",
+									"type": "uint256"
+								}
+							],
+							"internalType": "struct IMilkSupplyChain.BatchInfo",
+							"name": "batchInfo",
+							"type": "tuple"
+						},
+						{
+							"components": [
+								{
+									"internalType": "address",
+									"name": "transporter",
+									"type": "address"
+								},
+								{
+									"internalType": "string",
+									"name": "status",
+									"type": "string"
+								},
+								{
+									"internalType": "string",
+									"name": "reportCID",
+									"type": "string"
+								}
+							],
+							"internalType": "struct IMilkSupplyChain.TransportInfo",
+							"name": "transportInfo",
+							"type": "tuple"
+						},
+						{
+							"components": [
+								{
+									"internalType": "address",
+									"name": "inspector",
+									"type": "address"
+								},
+								{
+									"internalType": "string",
+									"name": "status",
+									"type": "string"
+								},
+								{
+									"internalType": "string",
+									"name": "reportCID",
+									"type": "string"
+								}
+							],
+							"internalType": "struct IMilkSupplyChain.InspectionInfo",
+							"name": "inspectionInfo",
+							"type": "tuple"
+						},
+						{
+							"components": [
+								{
+									"internalType": "address",
+									"name": "retailer",
+									"type": "address"
+								},
+								{
+									"internalType": "string",
+									"name": "status",
+									"type": "string"
+								},
+								{
+									"internalType": "string",
+									"name": "reportCID",
+									"type": "string"
+								}
+							],
+							"internalType": "struct IMilkSupplyChain.ReceivingInfo",
+							"name": "receivingInfo",
+							"type": "tuple"
+						},
+						{
+							"internalType": "address",
+							"name": "currentOwner",
+							"type": "address"
+						}
+					],
+					"internalType": "struct IMilkSupplyChain.MilkBatch",
+					"name": "",
+					"type": "tuple"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		}
+	]
+}
